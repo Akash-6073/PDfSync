@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Real-Time PDF Co-Viewer</h1>
+      <h1>Real-Time Slide Sync Co-Viewer</h1>
       <button onClick={() => setIsAdmin(!isAdmin)} className="switch-button">
         {isAdmin ? 'Switch to Viewer' : 'Switch to Admin'}
       </button>

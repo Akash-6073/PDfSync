@@ -25,7 +25,7 @@ const PDFViewer = () => {
 
   return (
     <div className="PDFViewer">
-      <h2>PDF Viewer</h2>
+      <h2>Viewer</h2>
       {loading ? (
         <div style={{color:"black"}}>
           <span className="loader"></span> <br />
