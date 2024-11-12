@@ -9,15 +9,14 @@ const cors = require('cors');
 const app = express();
 const server = http.createServer(app);
 
-// Define allowed origins
-const allowedOrigins = ['http://localhost:3000', 'https://slidesyncer1.vercel.app'];
 
 // Set up CORS for Express
 app.use(cors({
-  origin: allowedOrigins,
+  origin: '*',  
   methods: ['GET', 'POST'],
   credentials: true
 }));
+
 
 // Serve static files from the frontend build directory
 app.use(express.static(path.join(__dirname, '../frontend/build')));
@@ -30,8 +29,8 @@ app.get('*', (req, res) => {
 // Set up Socket.io with CORS
 const io = new Server(server, {
   cors: {
-    origin: allowedOrigins,
-    methods: ['GET', 'POST'],
+    origin: 'http://localhost:3000',  
+   methods: ['GET', 'POST'],
     credentials: true
   }
 });
