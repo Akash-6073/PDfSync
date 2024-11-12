@@ -12,7 +12,7 @@ const server = http.createServer(app);
 
 // Set up CORS for Express
 app.use(cors({
-  origin: '*',  
+  origin: 'http://localhost:3000',  
   methods: ['GET', 'POST'],
   credentials: true
 }));
