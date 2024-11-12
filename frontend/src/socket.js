@@ -1,5 +1,9 @@
 // src/socket.js
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:5000'); // Adjust if hosted elsewhere
+const socket = io('http://localhost:5000/', {
+    withCredentials: true,
+    path: '/socket.io',
+});
+
 export default socket;
