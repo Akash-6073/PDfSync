@@ -28,7 +28,7 @@ const PDFViewer = () => {
       <h2>PDF Viewer</h2>
       {loading ? (
         <div style={{color:"black"}}>
-          <span class="loader"></span> <br />
+          <span className="loader"></span> <br />
           Syncing pages...
         </div>
       ) : (

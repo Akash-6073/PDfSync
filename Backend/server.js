@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 
 // Define allowed origins
-const allowedOrigins = ['http://localhost:3000', 'https://slidesyncer1.vercel.app']; // Add your frontend URL here
+const allowedOrigins = ['http://localhost:3000', 'https://slidesyncer1.vercel.app'];
 
 // Set up CORS for Express
 app.use(cors({
