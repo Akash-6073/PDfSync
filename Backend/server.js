@@ -12,7 +12,7 @@ const server = http.createServer(app);
 
 // Set up CORS for Express
 app.use(cors({
-  origin: 'http://localhost:3000',  
+  origin: 'https://slidesyncer.vercel.app',  
   methods: ['GET', 'POST'],
   credentials: true
 }));
@@ -29,7 +29,7 @@ app.get('*', (req, res) => {
 // Set up Socket.io with CORS
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:3000',  
+    origin: 'https://slidesyncer.vercel.app',  
    methods: ['GET', 'POST'],
     credentials: true
   }
